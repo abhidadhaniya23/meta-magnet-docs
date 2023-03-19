@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+pre,
+code {
+  font-family: "JetBrains Mono", monospace !important;
+}
+
+body {
+  @apply font-sans hide-scrollbar;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  @apply font-medium;
+}
+footer {
+  word-spacing: 3px;
+}
+
+/* Loading Animation */
+
+.loader {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader::before,
+.loader::after {
+  border: 6.7px solid;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  display: block;
+  @apply border-blue-600;
+}
+
+.loader::before {
+  width: 33.6px;
+  height: 33.6px;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  animation: loader-1o3y8q 0.6000000000000001s infinite linear reverse;
+}
+
+.loader::after {
+  animation: loader-1o3y8q 0.4s infinite linear;
+  height: 56px;
+  width: 56px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+@keyframes loader-1o3y8q {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide scrollbar in docs code  */
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0 !important;
+  height: 2px !important;
+  /* scrollbar-width: none !important; */
+}

@@ -46,6 +46,16 @@ https://meta-magnet-api.vercel.app/api/metadata
 }
 ```
 
+### Postman request
+
+### Add headers
+
+![Postman request](https://meta-magnet.vercel.app/screenshots/postman-headers.png)
+
+### Add body
+
+![Postman request](https://meta-magnet.vercel.app/screenshots/postman-body.png)
+
 ## Api call using axios
 
 ```js

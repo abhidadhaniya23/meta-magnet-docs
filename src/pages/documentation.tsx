@@ -11,7 +11,7 @@ const docs = (props: any) => {
   return (
     <>
       <PathNavigator routes={navigatorRoutes.docs} />
-      <article className="prose prose-lg my-10 prose-pre:p-0 prose-a:no-underline prose-a:text-blue-500">
+      <article className="prose w-full prose-lg my-10 prose-pre:p-0 prose-a:no-underline prose-a:text-blue-500">
         <ReactMarkdown
           components={{
             code: code,

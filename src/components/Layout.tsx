@@ -37,7 +37,7 @@ const Layout = ({ children }: { children: JSX.Element }) => {
         <meta name="twitter:image" content={imgUrl} />
       </Head>
       <HeadLine />
-      <main className="max-w-screen-xl mx-auto flex flex-col gap-5 justify-center items-center px-4 lg:px-0">
+      <main className="max-w-screen-xl mx-auto flex flex-col gap-3 justify-center items-center px-4 lg:px-0">
         <NavbarComponent />
         <hr className="bg-gray-800/30 w-full -mt-5 mb-4" />
         {children}
@@ -54,7 +54,7 @@ const HeadLine = () => {
       <a
         href="https://gigaweb.in?ref=meta-magnet"
         target="_blank"
-        className="sticky text-base font-normal justify-center text-center bg-blue-600 text-white z-20 top-0 w-full py-3 inline-flex items-center px-20 gap-1 hover:bg-blue-800 duration-300"
+        className="sticky shadow-none hover:shadow-lg shadow-blue-200 text-base font-normal justify-center text-center bg-blue-600 text-white z-20 top-0 w-full py-3 inline-flex items-center px-20 gap-1 hover:bg-blue-800 duration-300"
       >
         Want to build brand website? Checkout Gigaweb
         <span className="hidden md:block">

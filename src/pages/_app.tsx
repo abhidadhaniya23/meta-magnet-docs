@@ -21,14 +21,18 @@ export default function App({ Component, pageProps }: AppProps) {
           .from("userdata")
           .select("*")
           .eq("email", session?.user.email)
-          .then((res) => {
-            // console.log(res);
+          .then(async (res) => {
             if (res?.data?.length === 0) {
-              supabase.from("userdata").insert([
-                {
+              const { data, error } = await supabase
+                .from("userdata")
+                .insert({
                   email: session?.user.email,
-                },
-              ]);
+                })
+                .select();
+
+              if (error) {
+                console.log(error);
+              }
             }
           });
       }

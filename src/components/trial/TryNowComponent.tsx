@@ -21,7 +21,7 @@ const TryNowComponent = () => {
     setLoading(true);
     try {
       const response = await axios
-        .post("/api/metadata", {
+        .post("/api/get", {
           url: data.url.startsWith("http://" || "https://")
             ? data.url
             : "https://" + data.url,

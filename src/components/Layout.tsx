@@ -30,8 +30,8 @@ const Layout = ({ children }: { children: JSX.Element }) => {
         <meta property="og:locale" content="en_US" />
         <meta property="og:image" content={imgUrl} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@abhidadhaniya23" />
-        <meta name="twitter:creator" content="@abhidadhaniya23" />
+        <meta name="twitter:site" content="@AbhiDadhaniya3" />
+        <meta name="twitter:creator" content="@AbhiDadhaniya3" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={imgUrl} />
